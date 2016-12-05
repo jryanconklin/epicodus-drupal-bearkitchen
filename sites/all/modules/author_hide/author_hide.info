@@ -1,0 +1,5 @@
+name = Author Hide
+description = Automatically deselects show author info on new content types
+package = Tweaks
+core = 7.x
+files[] = author_hide.module

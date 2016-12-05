@@ -1,0 +1,5 @@
+name = WV Custom
+description = Adds custom domains to the Follow module.
+package = Tweaks
+core = 7.x
+files[] = wv_custom.module

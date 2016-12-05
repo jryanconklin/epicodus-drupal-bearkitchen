@@ -1,0 +1,5 @@
+name = Simple Contact
+description = Remove Subject and Copy fields from contact form.
+package = Tweaks
+core = 7.x
+files[] = simple_contact.module

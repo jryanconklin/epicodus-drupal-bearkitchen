@@ -1,0 +1,10 @@
+<?php
+
+function author_hide_form_alter(&$form, &$form_state, $form_id) {
+    if ($form_id == 'node_type_form') {
+        // print "<pre>";
+        // print_r($form);
+        // print "</pre>";
+        $form['display']['node_submitted']['#default_value'] = 0;
+    }
+}
