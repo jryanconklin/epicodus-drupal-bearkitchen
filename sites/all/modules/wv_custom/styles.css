@@ -5,3 +5,11 @@ a.follow-link-imdb {
 a.follow-link-drupal {
   background-image: url(/sites/all/modules/wv_custom/drupal-logo.png);
 }
+
+a.follow-link-etsy {
+  background-image: url(/sites/all/modules/wv_custom/etsy.png);
+}
+
+a.follow-link-redbubble {
+  background-image: url(/sites/all/modules/wv_custom/redbubble.png);
+}

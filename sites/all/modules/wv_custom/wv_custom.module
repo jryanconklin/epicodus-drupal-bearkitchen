@@ -9,4 +9,12 @@ function wv_custom_follow_networks_alter(&$networks, $uid = 0) {
         'title' => t('Drupal.org'),
         'domain' => 'drupal.org',
     );
+    $networks[$uid]['etsy'] = array(
+        'title' => t('Etsy'),
+        'domain' => 'etsy.com',
+    );
+    $networks[$uid]['redbubble'] = array(
+        'title' => 'Red Bubble',
+        'domain' => 'redbubble.com',
+    );
 }
