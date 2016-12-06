@@ -3,7 +3,7 @@
 function simple_add_content_form_alter(&$form, &$form_state, $form_id) {
     $user_role = $GLOBALS['user']->roles;
     // print "<pre>";
-    // print_r($user_role);
+    // print_r($form);
     // print "</pre>";
     if (!in_array('administrator', $user_role)) {
         if ($form_id == 'press_node_form' ||
@@ -15,6 +15,7 @@ function simple_add_content_form_alter(&$form, &$form_state, $form_id) {
             $form['revision_information']['#access'] = 0;
             $form['path']['#access'] = 0;
             $form['author']['#access'] = 0;
+            $form['comment_settings']['comment']['#default_value'] = 1;
         }
     }
 }
