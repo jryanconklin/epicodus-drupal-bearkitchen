@@ -1,0 +1,20 @@
+<?php
+
+function simple_add_content_form_alter(&$form, &$form_state, $form_id) {
+    $user_role = $GLOBALS['user']->roles;
+    // print "<pre>";
+    // print_r($user_role);
+    // print "</pre>";
+    if (!in_array('administrator', $user_role)) {
+        if ($form_id == 'press_node_form' ||
+        $form_id == 'recipe_node_form' ||
+        $form_id == 'tip_node_form' ||
+        $form_id == 'article_node_form' ||
+        $form_id == 'page_node_form') {
+            $form['menu']['#access'] = 0;
+            $form['revision_information']['#access'] = 0;
+            $form['path']['#access'] = 0;
+            $form['author']['#access'] = 0;
+        }
+    }
+}

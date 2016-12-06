@@ -1,0 +1,5 @@
+name = Simple Add Content
+description = Hides certain options from add content forms.
+package = Tweaks
+core = 7.x
+files[] = simple_add_content.module
